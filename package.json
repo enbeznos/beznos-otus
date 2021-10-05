@@ -5,8 +5,11 @@
   "main": "index.html",
   "scripts": {
     "start-dz-01": "parcel dz-01/index.html --open",
+    "build-dz-01": "parcel dz-01/ index.html",
+    "start-dz-02": "parcel dz-02/index.html --open",
+    "build-dz-02": "parcel dz-02/ index.html",
+    "test": "jest dz-02/getPath.test.js"
     "start-dz-03": "parcel dz-03/index.html",
-    "build-dz-01": "parcel dz-01/index.html",
     "build-dz-03": "parcel dz-03/index.html"
   },
   "dependencies": {
@@ -17,6 +20,9 @@
     "@babel/preset-env": "^7.15.6",
     "@babel/register": "^7.15.3",
     "eslint": "^7.32.0"
+    "babel-jest": "^27.2.2",
+    "jest": "^27.2.2",
+    "ts-jest": "^27.0.5"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"

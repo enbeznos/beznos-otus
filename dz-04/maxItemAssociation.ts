@@ -1,18 +1,18 @@
-export function maxItemAssociation(orders: Array<string[]>): string[] {
+export function maxItemAssociation(orders: string[][]): string[] {
     let recommendations: Array<Set<string>> = [];
   
-    orders.forEach((order: string[]) => {
+    orders.forEach((order) => {
       if (!recommendations.length) {
-        recommendations.push(new Set<string>(order));
+        recommendations.push(new Set(order));
       } else {
         recommendations.forEach((recommendation: Set<string>) => {
           for (const item of order) {
             if (recommendation.has(item)) {
-              order.forEach((el: string) => {
+              order.forEach((el) => {
                 recommendation.add(el);
               });
             } else {
-              recommendations.push(new Set<string>(order));
+              recommendations.push(new Set(order));
             }
           }
         });

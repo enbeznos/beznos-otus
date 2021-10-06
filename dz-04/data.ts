@@ -1,4 +1,4 @@
-export const orders: Array<string[]> = [
+export const orders = [
     ["d", "e"],
     ["e", "n"],
     ["a", "b"],

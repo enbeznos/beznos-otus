@@ -5,8 +5,11 @@
   "main": "index.html",
   "scripts": {
     "start-dz-01": "parcel dz-01/index.html --open",
+    "build-dz-01": "parcel dz-01/ index.html",
+    "start-dz-02": "parcel dz-02/index.html --open",
+    "build-dz-02": "parcel dz-02/ index.html",
+    "test": "jest dz-02/getPath.test.js"
     "start-dz-03": "parcel dz-03/index.html",
-    "build-dz-01": "parcel dz-01/index.html",
     "build-dz-03": "parcel dz-03/index.html"
     "start-dz-04": "parcel dz-04/index.html --open",
     "build-dz-01": "parcel dz-01/index.html",
